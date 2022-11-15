@@ -1,0 +1,17 @@
+html, body, #map { 
+  height: 75vh;
+}
+
+/*popup*/
+.leaflet-popup-content-wrapper{
+  background-color: #ACB7D1;
+  border: solid black;
+  font-size: 13px;
+  box-shadow: 0 7px 20px rgb(98 64 129 / 100%);
+}
+
+/*triangolo sotto popup*/
+.leaflet-popup-tip{
+  background-color: white;
+  border: solid black;
+}

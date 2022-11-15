@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where are the circuits?</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+  </head>
+  
+  <body class="bg-black">
+    <div id="app">
+      <div class="font-bold text-center mb-7">
+        <h1 id="intestazione" class="py-5 bg-[#ACB7D1] shadow-lg shadow-[#624081] text-2xl mb-7">Where are the circuits?</h1>
+        <input id="anno" type="number" min="1950" max="2022" step="1" value="2022" class="bg-[#ACB7D1] shadow-lg rounded-lg text-center border-black border-2 shadow-[#624081] text-[30px]" />
+        <button id="fetchBtn" class="bg-[#ACB7D1] shadow-lg shadow-[#624081] rounded-lg text-center border-black border-2 px-8 text-[30px]"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+      </div>
+      <div id="map" class="mx-8 rounded-lg shadow-lg shadow-[#624081]"></div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://kit.fontawesome.com/a3ba5bfee8.js" crossorigin="anonymous"></script> <!-- icon -->
+  </body>
+</html>
